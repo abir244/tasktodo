@@ -13,8 +13,13 @@ dependencies:
 
   cupertino_icons: ^1.0.8
 
-  # ✅ Riverpod for state management
+  # State Management
   flutter_riverpod: ^2.5.1
+  camera: ^0.10.5+5  # or latest compatible
+
+  # Code Generation (Freezed)
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
 
 dev_dependencies:
   flutter_test:
@@ -22,15 +27,23 @@ dev_dependencies:
 
   flutter_lints: ^6.0.0
 
-  # ✅ Riverpod lints (recommended)
+  # Riverpod lints (recommended) - Updated to compatible version
   riverpod_lint: ^2.3.10
-  custom_lint: ^0.6.4
+  custom_lint: ^0.7.3
+
+  # Build Runners for Code Generation
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
 
 flutter:
   uses-material-design: true
 
   assets:
+    - assets/images/
     - assets/images/splash.png
     - assets/images/onboard1.png
     - assets/images/onboard2.png
     - assets/images/onboard3.png
+    - assets/images/register.png
+    - assets/images/logo.png
