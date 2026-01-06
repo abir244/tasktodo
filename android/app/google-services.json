@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "620272123882",
+    "project_id": "tasktodo-abir-2026",
+    "storage_bucket": "tasktodo-abir-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620272123882:android:3b8e442d2828de8fdd7c93",
+        "android_client_info": {
+          "package_name": "com.example.tasktodo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKPfhSp7H2ASCP0IzGfeg5RNo-6fVQi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

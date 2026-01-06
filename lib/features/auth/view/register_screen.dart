@@ -512,4 +512,3 @@ class RegisterScreen extends ConsumerWidget {
     );
   }
 }
-

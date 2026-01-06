@@ -68,7 +68,7 @@ class OnboardingScreen extends ConsumerWidget {
             ),
           ),
 
-          /// 🔹 READABILITY OVERLAY
+          ///  READABILITY OVERLAY
           Positioned.fill(
             child: Container(
               decoration: const BoxDecoration(
@@ -256,8 +256,8 @@ class OnboardingScreen extends ConsumerWidget {
                             height: buttonH,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.amber,
                                 foregroundColor: Colors.black,
+                                backgroundColor: Color(0xFFEDDF99),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12),
                                 ),

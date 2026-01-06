@@ -12,8 +12,7 @@ part of 'register_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$RegisterState {
@@ -38,22 +37,20 @@ mixin _$RegisterState {
 /// @nodoc
 abstract class $RegisterStateCopyWith<$Res> {
   factory $RegisterStateCopyWith(
-    RegisterState value,
-    $Res Function(RegisterState) then,
-  ) = _$RegisterStateCopyWithImpl<$Res, RegisterState>;
+          RegisterState value, $Res Function(RegisterState) then) =
+      _$RegisterStateCopyWithImpl<$Res, RegisterState>;
   @useResult
-  $Res call({
-    String name,
-    String email,
-    String phone,
-    String gender,
-    DateTime? dob,
-    String country,
-    String state,
-    String city,
-    bool isLoading,
-    String? errorMessage,
-  });
+  $Res call(
+      {String name,
+      String email,
+      String phone,
+      String gender,
+      DateTime? dob,
+      String country,
+      String state,
+      String city,
+      bool isLoading,
+      String? errorMessage});
 }
 
 /// @nodoc
@@ -82,51 +79,48 @@ class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
     Object? isLoading = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            name: null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                      as String,
-            email: null == email
-                ? _value.email
-                : email // ignore: cast_nullable_to_non_nullable
-                      as String,
-            phone: null == phone
-                ? _value.phone
-                : phone // ignore: cast_nullable_to_non_nullable
-                      as String,
-            gender: null == gender
-                ? _value.gender
-                : gender // ignore: cast_nullable_to_non_nullable
-                      as String,
-            dob: freezed == dob
-                ? _value.dob
-                : dob // ignore: cast_nullable_to_non_nullable
-                      as DateTime?,
-            country: null == country
-                ? _value.country
-                : country // ignore: cast_nullable_to_non_nullable
-                      as String,
-            state: null == state
-                ? _value.state
-                : state // ignore: cast_nullable_to_non_nullable
-                      as String,
-            city: null == city
-                ? _value.city
-                : city // ignore: cast_nullable_to_non_nullable
-                      as String,
-            isLoading: null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                      as bool,
-            errorMessage: freezed == errorMessage
-                ? _value.errorMessage
-                : errorMessage // ignore: cast_nullable_to_non_nullable
-                      as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String,
+      phone: null == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String,
+      gender: null == gender
+          ? _value.gender
+          : gender // ignore: cast_nullable_to_non_nullable
+              as String,
+      dob: freezed == dob
+          ? _value.dob
+          : dob // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      country: null == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String,
+      state: null == state
+          ? _value.state
+          : state // ignore: cast_nullable_to_non_nullable
+              as String,
+      city: null == city
+          ? _value.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      errorMessage: freezed == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -134,23 +128,21 @@ class _$RegisterStateCopyWithImpl<$Res, $Val extends RegisterState>
 abstract class _$$RegisterStateImplCopyWith<$Res>
     implements $RegisterStateCopyWith<$Res> {
   factory _$$RegisterStateImplCopyWith(
-    _$RegisterStateImpl value,
-    $Res Function(_$RegisterStateImpl) then,
-  ) = __$$RegisterStateImplCopyWithImpl<$Res>;
+          _$RegisterStateImpl value, $Res Function(_$RegisterStateImpl) then) =
+      __$$RegisterStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String name,
-    String email,
-    String phone,
-    String gender,
-    DateTime? dob,
-    String country,
-    String state,
-    String city,
-    bool isLoading,
-    String? errorMessage,
-  });
+  $Res call(
+      {String name,
+      String email,
+      String phone,
+      String gender,
+      DateTime? dob,
+      String country,
+      String state,
+      String city,
+      bool isLoading,
+      String? errorMessage});
 }
 
 /// @nodoc
@@ -158,9 +150,8 @@ class __$$RegisterStateImplCopyWithImpl<$Res>
     extends _$RegisterStateCopyWithImpl<$Res, _$RegisterStateImpl>
     implements _$$RegisterStateImplCopyWith<$Res> {
   __$$RegisterStateImplCopyWithImpl(
-    _$RegisterStateImpl _value,
-    $Res Function(_$RegisterStateImpl) _then,
-  ) : super(_value, _then);
+      _$RegisterStateImpl _value, $Res Function(_$RegisterStateImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of RegisterState
   /// with the given fields replaced by the non-null parameter values.
@@ -178,68 +169,66 @@ class __$$RegisterStateImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? errorMessage = freezed,
   }) {
-    return _then(
-      _$RegisterStateImpl(
-        name: null == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                  as String,
-        email: null == email
-            ? _value.email
-            : email // ignore: cast_nullable_to_non_nullable
-                  as String,
-        phone: null == phone
-            ? _value.phone
-            : phone // ignore: cast_nullable_to_non_nullable
-                  as String,
-        gender: null == gender
-            ? _value.gender
-            : gender // ignore: cast_nullable_to_non_nullable
-                  as String,
-        dob: freezed == dob
-            ? _value.dob
-            : dob // ignore: cast_nullable_to_non_nullable
-                  as DateTime?,
-        country: null == country
-            ? _value.country
-            : country // ignore: cast_nullable_to_non_nullable
-                  as String,
-        state: null == state
-            ? _value.state
-            : state // ignore: cast_nullable_to_non_nullable
-                  as String,
-        city: null == city
-            ? _value.city
-            : city // ignore: cast_nullable_to_non_nullable
-                  as String,
-        isLoading: null == isLoading
-            ? _value.isLoading
-            : isLoading // ignore: cast_nullable_to_non_nullable
-                  as bool,
-        errorMessage: freezed == errorMessage
-            ? _value.errorMessage
-            : errorMessage // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
+    return _then(_$RegisterStateImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      email: null == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String,
+      phone: null == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String,
+      gender: null == gender
+          ? _value.gender
+          : gender // ignore: cast_nullable_to_non_nullable
+              as String,
+      dob: freezed == dob
+          ? _value.dob
+          : dob // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      country: null == country
+          ? _value.country
+          : country // ignore: cast_nullable_to_non_nullable
+              as String,
+      state: null == state
+          ? _value.state
+          : state // ignore: cast_nullable_to_non_nullable
+              as String,
+      city: null == city
+          ? _value.city
+          : city // ignore: cast_nullable_to_non_nullable
+              as String,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      errorMessage: freezed == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$RegisterStateImpl extends _RegisterState {
-  const _$RegisterStateImpl({
-    this.name = '',
-    this.email = '',
-    this.phone = '',
-    this.gender = '',
-    this.dob,
-    this.country = '',
-    this.state = '',
-    this.city = '',
-    this.isLoading = false,
-    this.errorMessage,
-  }) : super._();
+  const _$RegisterStateImpl(
+      {this.name = '',
+      this.email = '',
+      this.phone = '',
+      this.gender = '',
+      this.dob,
+      this.country = '',
+      this.state = '',
+      this.city = '',
+      this.isLoading = false,
+      this.errorMessage})
+      : super._();
 
   @override
   @JsonKey()
@@ -295,19 +284,8 @@ class _$RegisterStateImpl extends _RegisterState {
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    name,
-    email,
-    phone,
-    gender,
-    dob,
-    country,
-    state,
-    city,
-    isLoading,
-    errorMessage,
-  );
+  int get hashCode => Object.hash(runtimeType, name, email, phone, gender, dob,
+      country, state, city, isLoading, errorMessage);
 
   /// Create a copy of RegisterState
   /// with the given fields replaced by the non-null parameter values.
@@ -319,18 +297,17 @@ class _$RegisterStateImpl extends _RegisterState {
 }
 
 abstract class _RegisterState extends RegisterState {
-  const factory _RegisterState({
-    final String name,
-    final String email,
-    final String phone,
-    final String gender,
-    final DateTime? dob,
-    final String country,
-    final String state,
-    final String city,
-    final bool isLoading,
-    final String? errorMessage,
-  }) = _$RegisterStateImpl;
+  const factory _RegisterState(
+      {final String name,
+      final String email,
+      final String phone,
+      final String gender,
+      final DateTime? dob,
+      final String country,
+      final String state,
+      final String city,
+      final bool isLoading,
+      final String? errorMessage}) = _$RegisterStateImpl;
   const _RegisterState._() : super._();
 
   @override

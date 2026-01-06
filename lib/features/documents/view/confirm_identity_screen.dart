@@ -1,7 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+// ✅ Correct import (no .txt)
+import '../../verification/view/complete_profile_screen.dart';
 import '../viewmodel/document_verification_notifier.dart';
+import '../../../main.dart'; // to access MyApp.routeVerifyProfile if using named routes
 
 class ConfirmIdentityScreen extends ConsumerWidget {
   const ConfirmIdentityScreen({super.key});
@@ -16,13 +20,33 @@ class ConfirmIdentityScreen extends ConsumerWidget {
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Text('Confirm Identity',
-                  style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700)),
-              const SizedBox(height: 10),
+              const Center(
+                child: Text(
+                  'Confirm Identity',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+
+              const Text(
+                'ID information',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: 12),
 
               _infoRow('Full Name', state.parsed.fullName),
+              _infoRow('Email Address', 'alexa.mate@example.com'),
+              _infoRow('Mobile Number', '(800) 555-0111'),
               _infoRow('Date of Birth', state.parsed.dob),
               _infoRow('ID Number', state.parsed.idNumber),
               _infoRow('Gender', state.parsed.gender),
@@ -36,7 +60,7 @@ class ConfirmIdentityScreen extends ConsumerWidget {
                 height: 52,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFFFC107),
+                    backgroundColor: const Color(0xFFEDDF99),
                     foregroundColor: Colors.black,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
@@ -44,10 +68,19 @@ class ConfirmIdentityScreen extends ConsumerWidget {
                     elevation: 0,
                   ),
                   onPressed: () {
-                    // TODO: submit to backend then proceed to app home
-                    Navigator.pop(context); // back to previous
+                    // ✅ Option A: named route (recommended with your main.dart)
+                    Navigator.pushNamed(context, MyApp.routeVerifyProfile);
+
+                    // ✅ Option B: direct push (uncomment if you prefer)
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (_) => const CompleteProfileScreen()),
+                    // );
                   },
-                  child: const Text('Continue'),
+                  child: const Text(
+                    'Continue',
+                    style: TextStyle(fontWeight: FontWeight.w600),
+                  ),
                 ),
               ),
             ],
@@ -69,10 +102,20 @@ class ConfirmIdentityScreen extends ConsumerWidget {
       child: Row(
         children: [
           Expanded(
-            child: Text(label, style: const TextStyle(color: Colors.white70)),
+            child: Text(
+              label,
+              style: const TextStyle(color: Colors.white70),
+            ),
           ),
           const SizedBox(width: 12),
-          Text(value.isEmpty ? '-' : value, style: const TextStyle(color: Colors.white)),
+          Flexible(
+            child: Text(
+              (value.isEmpty ? '-' : value),
+              textAlign: TextAlign.right,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(color: Colors.white),
+            ),
+          ),
         ],
       ),
     );
