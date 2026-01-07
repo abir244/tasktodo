@@ -17,6 +17,11 @@ dependencies:
   flutter_riverpod: ^2.5.1
   dio: ^5.4.0
 
+  # Location & Maps
+  geolocator: ^10.1.0
+  google_maps_flutter: ^2.6.1
+  geocoding: ^2.2.0
+
   # Firebase
   firebase_core: ^3.4.0
   cloud_firestore: ^5.4.2

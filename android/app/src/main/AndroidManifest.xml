@@ -13,6 +13,11 @@
             android:name="firebase_auth_disable_recaptcha"
             android:value="true" />
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY"/>
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
